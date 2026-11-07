@@ -1,0 +1,15 @@
+lavan is an incremental Rust translation derived from lavaan.
+
+Original package: lavaan, by Yves Rosseel, Terrence D. Jorgensen, Luc De Wilde,
+and the contributors named in reference/lavaan/DESCRIPTION.
+Reference version: 0.7-3.3395
+Reference commit: 7ec748e77ad301eecd2c37d8f16e15dae756c606
+Source of truth: the local reference/lavaan directory.
+
+The original package declares GPL (>= 2). This Rust translation is distributed
+under GPL-3.0-or-later; LICENSE contains the GPL version 3 text supplied with
+the reference. The Rust source, architecture, tests, and proofs are modified
+work and must not be attributed to the original authors as their implementation.
+
+No endorsement by the lavaan authors is implied. Third-party Rust and proof
+dependencies retain their respective licenses. See their pinned manifests.

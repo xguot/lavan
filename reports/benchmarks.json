@@ -1,0 +1,308 @@
+{
+  "measured_at_utc": "2026-11-07T22:32:51.264318+00:00",
+  "source_sha256": {
+    "Cargo.lock": "b9ae7357311e1dd732890ddcca6e5f39b5dcfec8e4b4108b116abb7ca74c569e",
+    "Cargo.toml": "5f834f244a61020c36ca8d6da0004a0f215347218ff9d209ad8fb6ec47f3c652",
+    "benches/kernels.rs": "b09deb792b438f2fdd8d44fab3d86f5be2d4ae4019ebab735eb5f9ee7a30cc75",
+    "examples/cfa.rs": "94ada7800abc982d82a7f2029ac552ee33f9120661376e52b03507addee114ed",
+    "scripts/benchmark.py": "df10cf87e45369c1bcad9858be20a88bd92b02936d4df99c2cc5a50014e3ffaf",
+    "scripts/extract_rust.py": "2cc441d706b891d3d1aff85f6ef2ed2cd93c094ae120e57dc82dbbdedfce977f",
+    "scripts/inventory.R": "495bac59eeb2fddafc180c06b20775880971b175c6dcc5c44659d024b31b8db2",
+    "scripts/inventory.py": "202014dde8b79e39da5d6943427b01f3648dd506b8f5c4a0ed6979a48dee26c8",
+    "scripts/prepare_reference.R": "a7990f6fff81908d0bd8577945c8ee85ea86d25be46ffa6ce702535e52ef3019",
+    "scripts/setup_verification.py": "50d22ff5f861282e4a25046b519336c85c162c476fef8ac6bdeefadbcef59a5b",
+    "scripts/validate.py": "bd233e5aeb4fe5159ad73cb18f13b76773d99e8abc33d60afdd76e66c636caed",
+    "src/cfa.rs": "235ae5246f402754739402c28d90d0084dfd150fdd38b1cd6b18358dbc617d51",
+    "src/error.rs": "484b598a4eab93034bc901ba818468dfbcaf7721d2496b113a803bc70aff6803",
+    "src/fit.rs": "3253eab61be6e8598d22764147dd56557a83092a6d628f09b2b01b2694e6258f",
+    "src/indexing.rs": "a1e3206d2e79f7546e069cf375254910df3c4340ad8bfb41bccb3f02a68b3487",
+    "src/lib.rs": "afad35079c4e9e4977c228eaf5c05d35ead73136731c93cc1fd7028800c1a730",
+    "src/matrix.rs": "a089ed0c09583ee2bdbb90000bbcaaa0b82db9aad27278165b442f5dc4d5a7a2",
+    "src/missing.rs": "57f5d186dbf165278c2dc4022b545132ced2cf85bf43eb2d602438e4fd8032c7",
+    "src/model.rs": "e5db2bf0b5d5108270b46b63970e2ba1ae0d8c4977bc04fb838e92b96c1d4a4f",
+    "src/mvnorm.rs": "4b18146cee03ed5ee61f8283b6101964eed233e83b961f7f598d4846a3a2af66",
+    "src/objective.rs": "185e10767d98da98e3a7dd91f19eb9d6e01cbab57a42c0d4a3780a1e6cb8f741",
+    "src/optim.rs": "fe7d11167261d24fe29107502954e7d7b0d48ba78585bf4a8f00a0605937fca0",
+    "src/sample.rs": "9347a59cc48eed927f246e2c316281c231603d58aa51ad78ca05781929b54299",
+    "tests/cfa.rs": "c6f2b706edfce441e26018faa5499fcd4f0111d9551c74ff93290982e1979e2e",
+    "tests/default_cfa.rs": "9d539a07941e78493eaea20eb1725f98c3f42b6a5cd7dff7495cbe9b6bc873d1",
+    "tests/equivalence.rs": "a4c96bee0c88140871fc06df94c08250fe24abf6bc28858471b19f8f45d56943",
+    "tests/invariants.rs": "96409715cd6393ac0c620c4678b472c46e2d5d176e17a95e91a1848a8c823d65",
+    "tests/models.rs": "7a25408dca41f2394b6925e5cf4abb293d6bf20fe1b11a568847eb22b580d347",
+    "tests/optimizer.rs": "ffefdd23218165128d23c1ef409ee326bc63b1abe231618a993e402833e67453",
+    "tests/r/benchmark.R": "0803054a953e4e7e4c77454d36963f934f618704ef28adbef3ace2f65562f486",
+    "tests/r/cfa.R": "b7a531fa78cc6823e609294f5e4df4b9bd501f4bdf5c98389a0ddae4f0b293a4",
+    "tests/r/models.R": "fcb884c4def2181aa3a830beb79173af84a8105ad86cbbf5bd66c81e6b5cad9a",
+    "tests/r/oracle.R": "adb13df801a3f82a38d6e7aeeda8aba1989b100e2b3b984ef34af7e30bf782b8",
+    "tests/r/reference.R": "ddfb0bb44e79ad8200292472305e4b4cc8e0fc7c7b56628c7b8a1cd5ad2146b3",
+    "verification/Audit.lean": "b40abd2f3a5e8ab24095b134c6477e5836e0cf4c9d7f317aac1aa5f04f0059f4",
+    "verification/Lavan/Fit.lean": "143789222a5a82a54ee5c7cceb97ce5865785b55d3d0e68ee502199c60aca4c9",
+    "verification/Lavan/Matrix.lean": "35992c2fb7057f9f31eafd2688915318e839dfe9b49b096abc0c5afaa696e52e",
+    "verification/Lavan.lean": "4b9beb4f4beb9afb374169b39c3f6ca3247a34c54a60914549214d36f121e5d1",
+    "verification/aeneas/Audit.lean": "6f2a85e75ae42f1224c99b4dd13bd560f0a4bc8ca942137dd102bb7beae86e30",
+    "verification/aeneas/LavanKernels.lean": "f7c8b4d120677c81dca7ad3b949d389b0725acb096ad5b0a1da24cbd2a9d3060",
+    "verification/aeneas/LavanRust/Indexing.lean": "cccf2e89e5986d040a8264eafdb55e7aae05d15e876d396ef525dc3e23ce7a79",
+    "verification/aeneas/LavanRust.lean": "de685733acd5ebf9cba541084a5ad54f6401470440af55d514053f3f6d527963",
+    "verification/aeneas/lake-manifest.json": "50f269290330902b8fd07b3469f3697a1c98dbeda39174ba73ffeae4e6c0d242",
+    "verification/aeneas/lakefile.toml": "f89fae54be3b73ae5f93e91a10a67617345799656feac3b74bead117b8b804b4",
+    "verification/aeneas/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "verification/components.json": "a686e6d13fd2879df64b7b7eaec82e36998ee875c5a97ed6c4dad73d34ca222d",
+    "verification/lake-manifest.json": "f178bf67883e99cce9af920f05cd80e5b5247cbc4e5f6f985fbba4683e201752",
+    "verification/lakefile.toml": "8d49f298c916611707eda6d54ef31693367666d5e6741903be07e851bd442a4f",
+    "verification/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "verification/rust-kernels/Cargo.toml": "ecd2a15c38a6a5b81b14654b1ff5ab08029ec551e9c7f922cbd7b3f6802f135e",
+    "verification/tools.json": "2b0e287d94553ee4c24bb306a4e3ecfdaad4910bb7bc0ab084465defcb0bf72c"
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo_lock_sha256": "b9ae7357311e1dd732890ddcca6e5f39b5dcfec8e4b4108b116abb7ca74c569e",
+  "input_sha256": "b2dc50f39fef6cd4b20f9c81fd25c3c09cb1e185ad0c47449f9910e6bc78d723",
+  "reference_commit": "7ec748e77ad301eecd2c37d8f16e15dae756c606",
+  "method": "Same serialized inputs, three warmups, >=60ms calibration, seven samples, median wall time; process startup/input parsing excluded; release Rust. Single machine, no statistical speed claim.",
+  "dimensions": {
+    "data": [
+      2000,
+      12
+    ],
+    "duplication_input": [
+      400,
+      400
+    ],
+    "lisrel": [
+      12,
+      3
+    ]
+  },
+  "summary": [
+    {
+      "name": "sample_statistics",
+      "rust_median_us": 263.58137890625,
+      "r_median_us": 257.8125000000002,
+      "r_over_rust": 0.9781134808149644
+    },
+    {
+      "name": "normal_log_likelihood",
+      "rust_median_us": 325.0157890625,
+      "r_median_us": 281.2499999999994,
+      "r_over_rust": 0.8653425755445852
+    },
+    {
+      "name": "normal_scores",
+      "rust_median_us": 324.26644140625,
+      "r_median_us": 1296.875000000003,
+      "r_over_rust": 3.999411700994498
+    },
+    {
+      "name": "expected_information",
+      "rust_median_us": 10.347590087890625,
+      "r_median_us": 265.6250000000002,
+      "r_over_rust": 25.670228308604017
+    },
+    {
+      "name": "duplication_pre_post",
+      "rust_median_us": 158.202962890625,
+      "r_median_us": 414.0624999999995,
+      "r_over_rust": 2.6172866325282746
+    },
+    {
+      "name": "lisrel_implied_covariance",
+      "rust_median_us": 0.7686182632446289,
+      "r_median_us": 10.375976562499996,
+      "r_over_rust": 13.499518628010566
+    }
+  ],
+  "rust": {
+    "implementation": "Rust lavan",
+    "results": [
+      {
+        "checksum": 0.9896781628673953,
+        "median_us": 263.58137890625,
+        "name": "sample_statistics",
+        "repetitions": 256,
+        "samples_us": [
+          259.529296875,
+          263.58137890625,
+          265.5615234375,
+          265.50016015625005,
+          264.953125,
+          263.15559765625,
+          260.91926953125
+        ]
+      },
+      {
+        "checksum": -38480.63376793071,
+        "median_us": 325.0157890625,
+        "name": "normal_log_likelihood",
+        "repetitions": 256,
+        "samples_us": [
+          325.508625,
+          324.59033203125,
+          325.640625,
+          325.82194140625,
+          324.250328125,
+          325.0157890625,
+          324.91015625
+        ]
+      },
+      {
+        "checksum": 0.6745558724418259,
+        "median_us": 324.26644140625,
+        "name": "normal_scores",
+        "repetitions": 256,
+        "samples_us": [
+          322.5213203125,
+          325.485515625,
+          322.70784765625,
+          325.22216796875,
+          324.84684375,
+          323.23030859374995,
+          324.26644140625
+        ]
+      },
+      {
+        "checksum": 0.9499455707767567,
+        "median_us": 10.347590087890625,
+        "name": "expected_information",
+        "repetitions": 8192,
+        "samples_us": [
+          10.371988891601562,
+          10.336491821289062,
+          10.434102294921876,
+          10.339619995117188,
+          10.359919311523436,
+          10.324396850585936,
+          10.347590087890625
+        ]
+      },
+      {
+        "checksum": 0.0059999640000648,
+        "median_us": 158.202962890625,
+        "name": "duplication_pre_post",
+        "repetitions": 512,
+        "samples_us": [
+          158.688802734375,
+          157.37907031249998,
+          158.202962890625,
+          158.26253125,
+          156.606771484375,
+          158.114990234375,
+          158.5201015625
+        ]
+      },
+      {
+        "checksum": 1.04,
+        "median_us": 0.7686182632446289,
+        "name": "lisrel_implied_covariance",
+        "repetitions": 131072,
+        "samples_us": [
+          0.765829719543457,
+          0.7632532119750977,
+          0.7730153427124024,
+          0.7596457748413086,
+          0.7703084945678711,
+          0.7700430526733398,
+          0.7686182632446289
+        ]
+      }
+    ]
+  },
+  "r": {
+    "implementation": "R lavaan",
+    "version": "0.7-3.3395",
+    "R": "R version 4.6.2 (2026-10-29)",
+    "BLAS": "/opt/homebrew/Cellar/openblas/0.3.34/lib/libopenblasp-r0.3.34.dylib",
+    "results": [
+      {
+        "name": "sample_statistics",
+        "samples_us": [
+          257.8125,
+          261.7187500000002,
+          261.7187499999998,
+          257.8125000000002,
+          261.7187499999998,
+          257.8124999999998,
+          253.90625000000023
+        ],
+        "median_us": 257.8125000000002,
+        "repetitions": 256,
+        "checksum": 0.9896781628673964
+      },
+      {
+        "name": "normal_log_likelihood",
+        "samples_us": [
+          277.34374999999983,
+          281.2500000000002,
+          281.2500000000002,
+          281.2499999999994,
+          277.34374999999983,
+          277.3437500000007,
+          281.2499999999994
+        ],
+        "median_us": 281.2499999999994,
+        "repetitions": 256,
+        "checksum": -38480.6337679307
+      },
+      {
+        "name": "normal_scores",
+        "samples_us": [
+          1343.7499999999977,
+          1296.875000000003,
+          1296.8749999999993,
+          1265.6249999999993,
+          1578.1249999999998,
+          1296.875000000003,
+          1265.6249999999993
+        ],
+        "median_us": 1296.875000000003,
+        "repetitions": 64,
+        "checksum": 0.674555872441826
+      },
+      {
+        "name": "expected_information",
+        "samples_us": [
+          265.6250000000002,
+          265.6250000000002,
+          265.6250000000002,
+          406.25000000000034,
+          277.3437499999989,
+          269.53125000000153,
+          265.6249999999985
+        ],
+        "median_us": 265.6250000000002,
+        "repetitions": 256,
+        "checksum": 0.9499455707767562
+      },
+      {
+        "name": "duplication_pre_post",
+        "samples_us": [
+          406.25000000000034,
+          414.0624999999995,
+          414.0624999999995,
+          507.8125000000013,
+          414.0624999999995,
+          425.78124999999994,
+          417.9687499999991
+        ],
+        "median_us": 414.0624999999995,
+        "repetitions": 256,
+        "checksum": 0.0059999640000648
+      },
+      {
+        "name": "lisrel_implied_covariance",
+        "samples_us": [
+          10.375976562499996,
+          10.131835937500023,
+          10.375976562499996,
+          10.00976562500009,
+          10.375976562499996,
+          10.131835937499915,
+          10.498046875000037
+        ],
+        "median_us": 10.375976562499996,
+        "repetitions": 8192,
+        "checksum": 1.04
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "r_functions": ["cfa"],
+    "status": "partial",
+    "rust_files": ["src/cfa.rs", "src/model.rs", "src/optim.rs"],
+    "rust_api": "cfa",
+    "tests": ["tests/cfa.rs", "tests/r/cfa.R"],
+    "scope": "Single-group complete continuous normal ML CFA; =~, ~~, ~1 with numeric/label/NA modifiers; marker/std.lv/orthogonal/means. Full syntax/defaults and other estimators unsupported."
+  },
+  {
+    "r_functions": ["lav_mat_vec", "lav_mat_vecr", "lav_mat_vech", "lav_mat_vechr", "lav_mat_vechu", "lav_mat_vechru", "lav_mat_vech_rev", "lav_mat_vechr_rev", "lav_mat_vech_idx", "lav_mat_vechr_idx", "lav_mat_vechu_idx", "lav_mat_vechru_idx", "lav_mat_diag_idx", "lav_mat_diagh_idx", "lav_mat_antidiag_idx"],
+    "status": "supported-domain",
+    "rust_files": ["src/matrix.rs", "src/indexing.rs"],
+    "rust_api": "matrix::{vec,vecr,half_vectorize,half_reverse,triangle_indices,diagonal_indices,half_diagonal_indices,antidiagonal_indices}",
+    "tests": ["tests/equivalence.rs", "tests/invariants.rs", "tests/r/oracle.R"],
+    "scope": "f64 matrices, square half-vectorization, checked nonnegative dimensions; zero-based indices. No R coercion/recycling. Only the small production indexing kernels have Aeneas refinement proofs."
+  },
+  {
+    "r_functions": ["lav_mat_dup", "lav_mat_dup_pre", "lav_mat_dup_post", "lav_mat_dup_pre_post", "lav_mat_dup_ginv", "lav_mat_dup_ginv_pre", "lav_mat_dup_ginv_post", "lav_mat_dup_ginv_pre_post", "lav_mat_com", "lav_mat_com_pre", "lav_mat_com_post", "lav_mat_com_pre_post", "lav_mat_com_mn_pre"],
+    "status": "supported-domain",
+    "rust_files": ["src/matrix.rs", "src/indexing.rs"],
+    "rust_api": "matrix::{duplication,duplication_inverse,duplication_pre,duplication_post,duplication_pre_post,commutation,commutation_pre,commutation_post,commutation_pre_post}",
+    "tests": ["tests/equivalence.rs", "tests/invariants.rs", "tests/r/oracle.R"],
+    "scope": "Conformable f64 matrices; dense duplication order 1..255; implicit products avoid dense operators. Aeneas proves index kernels, not floating-point operator products."
+  },
+  {
+    "r_functions": ["lav_cor2cov", "lav_cov2cor_partial", "lav_mat_bdiag", "lav_mat_trace", "lav_mat_transform_mean_cov"],
+    "status": "supported-domain",
+    "rust_files": ["src/matrix.rs", "src/sample.rs"],
+    "rust_api": "matrix::{correlation_to_covariance,covariance_to_correlation,block_diagonal,trace_product}, sample::transform_mean_covariance",
+    "tests": ["tests/equivalence.rs", "tests/r/oracle.R"],
+    "scope": "Finite conformable f64 inputs; positive variances for correlation; SPD sample covariance for moment transforms. No R names/coercions."
+  },
+  {
+    "r_functions": ["lav_mat_sym_sqrt", "lav_mat_inverse_iminus"],
+    "status": "supported-domain",
+    "rust_files": ["src/matrix.rs"],
+    "rust_api": "matrix::{symmetric_sqrt,inverse_iminus}",
+    "tests": ["tests/equivalence.rs", "tests/r/oracle.R"],
+    "scope": "Finite symmetric input for square roots; finite square input for inverse(I-A). Nilpotent shortcut then inverse/pseudoinverse. Floating-point conditioning and warning parity unproved."
+  },
+  {
+    "r_functions": ["lav_mat_sym_inverse", "lav_mat_sym_solve_spd"],
+    "status": "partial",
+    "rust_files": ["src/matrix.rs"],
+    "rust_api": "matrix::Spd",
+    "tests": ["tests/equivalence.rs", "tests/r/oracle.R"],
+    "scope": "Strictly positive-definite finite matrices, Cholesky only. Indefinite/eigen/zero-row/preconditioning/fallback and warning branches unsupported."
+  },
+  {
+    "r_functions": ["lav_mat_cov", "lav_mvn_samp_stats", "lav_mvn_w_tilde", "lav_mvn_w_tilde_samp", "lav_mat_var_wt"],
+    "status": "supported-domain",
+    "rust_files": ["src/sample.rs"],
+    "rust_api": "sample::{SampleStats,weighted_variances}",
+    "tests": ["tests/equivalence.rs", "tests/invariants.rs", "tests/r/oracle.R"],
+    "scope": "ML divisor N; complete finite data and nonnegative frequency weights. Weighted variances omit NaN per column. Unweighted covariance needs at least two rows."
+  },
+  {
+    "r_functions": ["lav_mvn_dmvnorm", "lav_mvn_loglik_data", "lav_mvn_loglik_samp", "lav_mvn_loglik_data_z", "lav_mvn_dlogl_dmu_dvechsigma", "lav_mvn_sc_mu_sigma", "lav_mvn_info_expected", "lav_mvn_info_observed_data", "lav_mvn_info_observed_samp", "lav_mvn_info_firstorder", "lav_mvn_inv_info_expected"],
+    "status": "partial",
+    "rust_files": ["src/mvnorm.rs", "src/sample.rs"],
+    "rust_api": "mvnorm::Normal::{log_densities,log_likelihood,log_likelihood_stats,scores,gradient,information_expected,information_observed,information_first_order,inverse_information_expected}",
+    "tests": ["tests/equivalence.rs", "tests/invariants.rs", "tests/r/oracle.R"],
+    "scope": "SPD covariance; case weights; fixed-x marginal likelihood subtraction and score zeroing; unit information; clusters; correlation information without fixed-x. R inverse-method options and separate external x moments unsupported."
+  },
+  {
+    "r_functions": ["lav_mvn_mi_loglik_data", "lav_mvn_mi_llik_casewise", "lav_mvn_mi_llik_pattern", "lav_mvn_mi_sc_mu_sigma", "lav_mvn_mi_info_expected", "lav_mvn_mi_info_observed_data", "lav_mvn_mi_info_firstorder", "lav_mvn_mi_impute_pattern", "lav_mvn_mi_estep"],
+    "status": "partial",
+    "rust_files": ["src/missing.rs", "src/mvnorm.rs"],
+    "rust_api": "missing::MissingData",
+    "tests": ["tests/equivalence.rs", "tests/r/oracle.R"],
+    "scope": "Gaussian observed-pattern likelihoods/scores/information/imputation/E-step; nonnegative case weights; empty cases omitted. Missing fixed-x conditional likelihood, log2pi/minus_two switches, supplied pattern inputs unsupported."
+  },
+  {
+    "r_functions": ["lav_model_objective_ml", "lav_model_objective_gls", "lav_model_objective_wls", "lav_model_objective_dwls"],
+    "status": "supported-domain",
+    "rust_files": ["src/objective.rs"],
+    "rust_api": "objective::{MaximumLikelihood,generalized_least_squares,weighted_least_squares,diagonally_weighted_least_squares}",
+    "tests": ["tests/equivalence.rs", "tests/invariants.rs", "tests/r/oracle.R"],
+    "scope": "Finite conformable moments, SPD sample covariance for ML/GLS; optional meanstructure and GLS correlation correction. Objectives are not full WLS/DWLS estimation pipelines."
+  },
+  {
+    "r_functions": ["lav_lisrel_sigma", "lav_lisrel_mu", "lav_lisrel_dsigma_dx", "lav_lisrel_dmu_dx", "lav_model_objective_fiml"],
+    "status": "partial",
+    "rust_files": ["src/model.rs", "src/missing.rs", "src/optim.rs"],
+    "rust_api": "model::{Lisrel,Model::{implied,jacobian,fit,fit_missing}}",
+    "tests": ["tests/models.rs", "tests/r/models.R"],
+    "scope": "Single-group continuous numeric LISREL and Gaussian FIML; analytic directions for lambda/theta/psi/beta/nu/alpha and shared slots. Expected-information SE. No composites, categorical delta, conditional-x, multilevel or full R parameter-table machinery. Independent BFGS optimizer."
+  },
+  {
+    "r_functions": ["lav_fit_cfi", "lav_fit_rni", "lav_fit_tli", "lav_fit_rfi", "lav_fit_nfi", "lav_fit_pnfi", "lav_fit_ifi", "lav_fit_rmsea", "lav_fit_aic", "lav_fit_bic", "lav_fit_sabic"],
+    "status": "supported-domain",
+    "rust_files": ["src/fit.rs"],
+    "rust_api": "fit::{Comparison,rmsea,rmsea_population,aic,bic,sabic}",
+    "tests": ["tests/equivalence.rs", "tests/r/oracle.R"],
+    "scope": "Scalar formulas, including robust CFI/RNI/TLI branches, NA/NaN outcomes and R all.equal zero tolerance. No model-level robust correction estimation, confidence intervals, tests or recycled vectors."
+  }
+]

@@ -1,0 +1,9 @@
+/target/
+/.tools/
+/verification/.lake/
+/verification/aeneas/.lake/
+/verification/aeneas/*.llbc
+/verification/aeneas/Lavan-kernels.lean
+/verification/rust-kernels/target/
+/reports/*.local.json
+__pycache__/

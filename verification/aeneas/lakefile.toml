@@ -1,0 +1,13 @@
+name = "lavanRustProofs"
+version = "0.1.0"
+defaultTargets = ["LavanRust"]
+
+[[require]]
+name = "aeneas"
+path = "../../.tools/aeneas/backends/lean"
+
+[[lean_lib]]
+name = "LavanRust"
+
+[[lean_lib]]
+name = "LavanKernels"

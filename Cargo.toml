@@ -1,0 +1,23 @@
+[package]
+name = "lavan"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "An incremental, reference-tested Rust port of lavaan"
+
+[dependencies]
+nalgebra = { version = "0.34", default-features = false, features = ["std"] }
+
+[dev-dependencies]
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+
+[[bench]]
+name = "kernels"
+harness = false

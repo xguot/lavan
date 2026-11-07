@@ -1,0 +1,265 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-11-07T22:31:34.446136+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "source_sha256": {
+    "Cargo.lock": "b9ae7357311e1dd732890ddcca6e5f39b5dcfec8e4b4108b116abb7ca74c569e",
+    "Cargo.toml": "5f834f244a61020c36ca8d6da0004a0f215347218ff9d209ad8fb6ec47f3c652",
+    "benches/kernels.rs": "b09deb792b438f2fdd8d44fab3d86f5be2d4ae4019ebab735eb5f9ee7a30cc75",
+    "examples/cfa.rs": "94ada7800abc982d82a7f2029ac552ee33f9120661376e52b03507addee114ed",
+    "scripts/benchmark.py": "df10cf87e45369c1bcad9858be20a88bd92b02936d4df99c2cc5a50014e3ffaf",
+    "scripts/extract_rust.py": "2cc441d706b891d3d1aff85f6ef2ed2cd93c094ae120e57dc82dbbdedfce977f",
+    "scripts/inventory.R": "495bac59eeb2fddafc180c06b20775880971b175c6dcc5c44659d024b31b8db2",
+    "scripts/inventory.py": "202014dde8b79e39da5d6943427b01f3648dd506b8f5c4a0ed6979a48dee26c8",
+    "scripts/prepare_reference.R": "a7990f6fff81908d0bd8577945c8ee85ea86d25be46ffa6ce702535e52ef3019",
+    "scripts/setup_verification.py": "50d22ff5f861282e4a25046b519336c85c162c476fef8ac6bdeefadbcef59a5b",
+    "scripts/validate.py": "bd233e5aeb4fe5159ad73cb18f13b76773d99e8abc33d60afdd76e66c636caed",
+    "src/cfa.rs": "235ae5246f402754739402c28d90d0084dfd150fdd38b1cd6b18358dbc617d51",
+    "src/error.rs": "484b598a4eab93034bc901ba818468dfbcaf7721d2496b113a803bc70aff6803",
+    "src/fit.rs": "3253eab61be6e8598d22764147dd56557a83092a6d628f09b2b01b2694e6258f",
+    "src/indexing.rs": "a1e3206d2e79f7546e069cf375254910df3c4340ad8bfb41bccb3f02a68b3487",
+    "src/lib.rs": "afad35079c4e9e4977c228eaf5c05d35ead73136731c93cc1fd7028800c1a730",
+    "src/matrix.rs": "a089ed0c09583ee2bdbb90000bbcaaa0b82db9aad27278165b442f5dc4d5a7a2",
+    "src/missing.rs": "57f5d186dbf165278c2dc4022b545132ced2cf85bf43eb2d602438e4fd8032c7",
+    "src/model.rs": "e5db2bf0b5d5108270b46b63970e2ba1ae0d8c4977bc04fb838e92b96c1d4a4f",
+    "src/mvnorm.rs": "4b18146cee03ed5ee61f8283b6101964eed233e83b961f7f598d4846a3a2af66",
+    "src/objective.rs": "185e10767d98da98e3a7dd91f19eb9d6e01cbab57a42c0d4a3780a1e6cb8f741",
+    "src/optim.rs": "fe7d11167261d24fe29107502954e7d7b0d48ba78585bf4a8f00a0605937fca0",
+    "src/sample.rs": "9347a59cc48eed927f246e2c316281c231603d58aa51ad78ca05781929b54299",
+    "tests/cfa.rs": "c6f2b706edfce441e26018faa5499fcd4f0111d9551c74ff93290982e1979e2e",
+    "tests/default_cfa.rs": "9d539a07941e78493eaea20eb1725f98c3f42b6a5cd7dff7495cbe9b6bc873d1",
+    "tests/equivalence.rs": "a4c96bee0c88140871fc06df94c08250fe24abf6bc28858471b19f8f45d56943",
+    "tests/invariants.rs": "96409715cd6393ac0c620c4678b472c46e2d5d176e17a95e91a1848a8c823d65",
+    "tests/models.rs": "7a25408dca41f2394b6925e5cf4abb293d6bf20fe1b11a568847eb22b580d347",
+    "tests/optimizer.rs": "ffefdd23218165128d23c1ef409ee326bc63b1abe231618a993e402833e67453",
+    "tests/r/benchmark.R": "0803054a953e4e7e4c77454d36963f934f618704ef28adbef3ace2f65562f486",
+    "tests/r/cfa.R": "b7a531fa78cc6823e609294f5e4df4b9bd501f4bdf5c98389a0ddae4f0b293a4",
+    "tests/r/models.R": "fcb884c4def2181aa3a830beb79173af84a8105ad86cbbf5bd66c81e6b5cad9a",
+    "tests/r/oracle.R": "adb13df801a3f82a38d6e7aeeda8aba1989b100e2b3b984ef34af7e30bf782b8",
+    "tests/r/reference.R": "ddfb0bb44e79ad8200292472305e4b4cc8e0fc7c7b56628c7b8a1cd5ad2146b3",
+    "verification/Audit.lean": "b40abd2f3a5e8ab24095b134c6477e5836e0cf4c9d7f317aac1aa5f04f0059f4",
+    "verification/Lavan/Fit.lean": "143789222a5a82a54ee5c7cceb97ce5865785b55d3d0e68ee502199c60aca4c9",
+    "verification/Lavan/Matrix.lean": "35992c2fb7057f9f31eafd2688915318e839dfe9b49b096abc0c5afaa696e52e",
+    "verification/Lavan.lean": "4b9beb4f4beb9afb374169b39c3f6ca3247a34c54a60914549214d36f121e5d1",
+    "verification/aeneas/Audit.lean": "6f2a85e75ae42f1224c99b4dd13bd560f0a4bc8ca942137dd102bb7beae86e30",
+    "verification/aeneas/LavanKernels.lean": "f7c8b4d120677c81dca7ad3b949d389b0725acb096ad5b0a1da24cbd2a9d3060",
+    "verification/aeneas/LavanRust/Indexing.lean": "cccf2e89e5986d040a8264eafdb55e7aae05d15e876d396ef525dc3e23ce7a79",
+    "verification/aeneas/LavanRust.lean": "de685733acd5ebf9cba541084a5ad54f6401470440af55d514053f3f6d527963",
+    "verification/aeneas/lake-manifest.json": "50f269290330902b8fd07b3469f3697a1c98dbeda39174ba73ffeae4e6c0d242",
+    "verification/aeneas/lakefile.toml": "f89fae54be3b73ae5f93e91a10a67617345799656feac3b74bead117b8b804b4",
+    "verification/aeneas/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "verification/components.json": "a686e6d13fd2879df64b7b7eaec82e36998ee875c5a97ed6c4dad73d34ca222d",
+    "verification/lake-manifest.json": "f178bf67883e99cce9af920f05cd80e5b5247cbc4e5f6f985fbba4683e201752",
+    "verification/lakefile.toml": "8d49f298c916611707eda6d54ef31693367666d5e6741903be07e851bd442a4f",
+    "verification/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "verification/rust-kernels/Cargo.toml": "ecd2a15c38a6a5b81b14654b1ff5ab08029ec551e9c7f922cbd7b3f6802f135e",
+    "verification/tools.json": "2b0e287d94553ee4c24bb306a4e3ecfdaad4910bb7bc0ab084465defcb0bf72c"
+  },
+  "checks": [
+    {
+      "name": "rust-version",
+      "command": [
+        "rustc",
+        "--version"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 0.023855000035837293,
+      "log": "target/validation/rust-version.log"
+    },
+    {
+      "name": "format",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 0.07474408397683874,
+      "log": "target/validation/format.log"
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 0.8024430410005152,
+      "log": "target/validation/clippy.log"
+    },
+    {
+      "name": "rust-docs",
+      "command": [
+        "cargo",
+        "doc",
+        "--locked",
+        "--no-deps"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 0.36346979200607166,
+      "log": "target/validation/rust-docs.log"
+    },
+    {
+      "name": "rust-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--",
+        "--nocapture"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 7.303744542005006,
+      "log": "target/validation/rust-tests.log"
+    },
+    {
+      "name": "rust-release-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--release",
+        "--",
+        "--nocapture"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 14.380074874963611,
+      "log": "target/validation/rust-release-tests.log"
+    },
+    {
+      "name": "example",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--release",
+        "--example",
+        "cfa"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 0.11343741603195667,
+      "log": "target/validation/example.log"
+    },
+    {
+      "name": "inventory",
+      "command": [
+        "python3",
+        "scripts/inventory.py",
+        "--check"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 1.0418088340084068,
+      "log": "target/validation/inventory.log"
+    },
+    {
+      "name": "mathlib-proofs",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "directory": "verification",
+      "exit_code": 0,
+      "seconds": 3.9494298339704983,
+      "log": "target/validation/mathlib-proofs.log"
+    },
+    {
+      "name": "mathlib-audit",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "directory": "verification",
+      "exit_code": 0,
+      "seconds": 7.792965834029019,
+      "log": "target/validation/mathlib-audit.log"
+    },
+    {
+      "name": "rust-extraction-proofs",
+      "command": [
+        "python3",
+        "scripts/extract_rust.py",
+        "--check"
+      ],
+      "directory": ".",
+      "exit_code": 0,
+      "seconds": 6.319046916032676,
+      "log": "target/validation/rust-extraction-proofs.log"
+    },
+    {
+      "name": "rust-proof-audit",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "directory": "verification/aeneas",
+      "exit_code": 0,
+      "seconds": 10.162055291002616,
+      "log": "target/validation/rust-proof-audit.log"
+    }
+  ],
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "proofs": {
+    "mathematical_theorems": 14,
+    "extracted_rust_theorems": 3,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "audit": "'Lavan.columnIndex_injective' depends on axioms: [propext]\n'Lavan.columnIndex_bound' depends on axioms: [propext]\n'Lavan.lowerRead_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.lowerRead_roundtrip' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.duplication_projection_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.duplication_inverse_left' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.commutation_involution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.covariance_shift_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.inverse_iminus_square_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.inverse_iminus_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.cfi_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.rmsea_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.rmsea_zero_at_small_discrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Lavan.gaussian_variance_score_zero_at_moment_match' depends on axioms: [propext, Classical.choice, Quot.sound]\n'lavan_kernels.column_index_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'lavan_kernels.column_index_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'lavan_kernels.transpose_index_spec' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  },
+  "equivalence": {
+    "scalar_comparisons": 1851290,
+    "max_absolute_error": 1.819e-12,
+    "max_scaled_error": 2.746e-13,
+    "kernel_tolerance": "3e-10 * max(1, abs(R))",
+    "worst_cases": [
+      "GLS objective, Rust=1.03614861286212763e4, R=1.03614861286212781e4, error=1.819e-12",
+      "gradient[4], Rust=1.42658151444714787e0, R=1.42658151444675618e0, scaled error=2.746e-13"
+    ],
+    "numeric_model_cases": 6,
+    "cfa_frontend_cases": 6
+  },
+  "reference": {
+    "r_files": 248,
+    "r_lines": 159455,
+    "reference_commit": "7ec748e77ad301eecd2c37d8f16e15dae756c606",
+    "reference_tree_sha256": "7a426f2e0064733cc9ba21169e2361d34a6a6ac8ff784a5c3c3c4647d7d25197",
+    "summary": {
+      "definition_statuses": {
+        "partial": 28,
+        "supported-domain": 60,
+        "unsupported": 1619
+      },
+      "definitions": 1707,
+      "export_statuses": {
+        "partial": 1,
+        "supported-domain": 37,
+        "unsupported": 198
+      },
+      "exports": 236
+    },
+    "version": "0.7-3.3395"
+  },
+  "finished_at_utc": "2026-11-07T22:32:26.796758+00:00"
+}

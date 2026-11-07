@@ -1,0 +1,3 @@
+[submodule "reference/lavaan"]
+	path = reference/lavaan
+	url = https://github.com/yrosseel/lavaan.git
